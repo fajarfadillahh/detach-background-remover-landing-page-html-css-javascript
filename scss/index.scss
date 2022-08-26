@@ -140,3 +140,99 @@ img {
 .main {
   overflow: hidden;
 }
+
+// ===== HEADER SECTION =====
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $black-color;
+  z-index: $z-fixed;
+  transition: $transition-400;
+
+  &__container {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: $font-bold;
+    color: $white-color;
+
+    &-icon {
+      width: 35px;
+    }
+  }
+
+  &__menu {
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      width: 80%;
+      top: 7rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba($color: #171820, $alpha: 1);
+      border-radius: 8px;
+      transition: $transition-400;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+
+    // show menu
+    &.show-menu {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $grey-color;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 1.5rem;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, $red-color, $purple-color);
+      border-radius: 1rem;
+      transition: $transition-400;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-top: $margin-1-5;
+  }
+
+  &__toggle {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: $white-color;
+    cursor: pointer;
+  }
+}
