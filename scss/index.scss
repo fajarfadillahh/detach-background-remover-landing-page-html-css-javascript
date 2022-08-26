@@ -248,4 +248,53 @@ img {
     text-align: center;
     justify-self: auto;
   }
+
+  &__tag {
+    margin-top: $margin-0-5;
+  }
+}
+
+// ===== WORKS SECTION =====
+.works {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #171820;
+    border-radius: 8px;
+
+    &-icon {
+      width: 45px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $white-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+  }
 }
