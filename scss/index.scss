@@ -236,3 +236,16 @@ img {
     cursor: pointer;
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: auto;
+  }
+}
