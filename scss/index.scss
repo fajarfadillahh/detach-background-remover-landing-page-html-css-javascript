@@ -298,3 +298,33 @@ img {
     }
   }
 }
+
+// ===== FEATURES SECTION =====
+.features {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1rem;
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $white-color;
+    }
+  }
+}
