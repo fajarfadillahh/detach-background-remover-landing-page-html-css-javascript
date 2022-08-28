@@ -328,3 +328,16 @@ img {
     }
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+}
