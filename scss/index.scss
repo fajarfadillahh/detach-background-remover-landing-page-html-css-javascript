@@ -162,8 +162,8 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 20px;
-    font-weight: $font-bold;
+    font-size: 18px;
+    font-weight: $font-semibold;
     color: $white-color;
 
     &-icon {
@@ -430,5 +430,73 @@ img {
   &__data {
     text-align: center;
     justify-self: center;
+  }
+}
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 8rem 0 2rem;
+
+  &__container {
+    gap: 6rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+  }
+
+  &__data {
+    &-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $white-color;
+    }
+
+    &-img {
+      width: 35px;
+    }
+
+    &-text {
+      margin-top: $margin-0-5;
+    }
+  }
+
+  &__content {
+    &-title {
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $white-color;
+      margin-bottom: $margin-1-5;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $white-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    padding-top: 2rem;
+    border-top: 1.5px solid rgba($color: #171820, $alpha: 0.8);
+    text-align: center;
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
   }
 }
