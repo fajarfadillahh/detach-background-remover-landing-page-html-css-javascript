@@ -419,3 +419,16 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  &__bg {
+    padding: 6rem 0;
+    background-color: #171820;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+}
