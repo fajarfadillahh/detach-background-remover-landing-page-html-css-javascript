@@ -341,3 +341,81 @@ img {
     justify-self: center;
   }
 }
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #171820;
+    border-radius: 8px;
+    transition: $transition-400;
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      width: 65px;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $white-color;
+      margin-bottom: 6px;
+    }
+
+    &-profession {
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.2rem;
+      color: #ffd231;
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 2rem 0 3rem;
+  }
+
+  // swiper pagination
+  &__container {
+    overflow: hidden;
+
+    & .swiper-pagination {
+      position: initial;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba($color: #ffffff, $alpha: 0.7);
+      transition: $transition-400;
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 2rem;
+      height: 10px;
+      background: linear-gradient(90deg, $red-color, $purple-color);
+      border-radius: 5rem;
+    }
+  }
+}
