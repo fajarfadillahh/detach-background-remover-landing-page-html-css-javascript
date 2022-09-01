@@ -675,3 +675,49 @@ img {
     }
   }
 }
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .home {
+    &__title {
+      font-size: 56px;
+    }
+
+    &__text {
+      width: 480px;
+    }
+  }
+
+  .features__group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .works__content-title,
+  .features__content-title,
+  .testimonial__content-name {
+    font-size: 20px;
+  }
+
+  .callback {
+    &__bg {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    &__container {
+      padding: 7rem 0;
+      background-color: #171820;
+      border-radius: 8px;
+    }
+  }
+
+  .footer {
+    &__group {
+      grid-template-columns: 1fr repeat(3, 0.8fr);
+    }
+
+    &__content {
+      justify-self: center;
+    }
+  }
+}
