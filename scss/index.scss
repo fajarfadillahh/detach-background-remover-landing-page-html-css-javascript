@@ -721,3 +721,9 @@ img {
     }
   }
 }
+
+// ===== :SELECTION =====
+::selection {
+  background-color: $purple-color;
+  color: $white-color;
+}
